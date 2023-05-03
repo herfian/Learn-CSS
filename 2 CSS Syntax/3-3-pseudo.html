@@ -1,0 +1,52 @@
+<!-- pseudo-element CSS digunakan untuk memberikan style pada bagian tertentu dari suatu element.
+
+Syntax pseudo-element adalah:
+selector::pseudo-element {
+  property: nilai;
+} -->
+
+<!-- Perhatikan syntax di atas, setelah selector, kita menggunakan titik dua ganda (::) 
+sebagai penanda bahwa selanjutnya kita akan menggunakan pseudo-element. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pseudo Element CSS</title>
+
+  <style>
+    a::before{ /* ::after */
+      content: "Link - ";
+    }
+    h1::selection {
+      color: white;
+      background: black;
+    }
+    p::selection {
+      color: red;
+      background: yellow;
+    }
+    p::first-letter {
+      font-size: 50px;
+      color: red;
+    }
+    p::first-line {
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Cerita Hari ini</h1>
+  <ul>
+    <li><a href="#">Download part 1</a></li>
+    <li><a href="#">Download part 2</a></li>
+    <li><a href="#">Download part 3</a></li>
+  </ul>
+  <p>
+      Aku senang sekali hari ini karena mendapatkan nilai sempurna pada
+      pelajaran programming. Ternyata jerih payahku belajar dari seminggu yang lalu terbayarkan hari ini.
+      Tapi pada saat yang bersamaan aku juga merasa sedih karena teman dekatku sedang sakit. Dia tidak masuk sekolah hari ini. 
+    </p>
+</body>
+</html>

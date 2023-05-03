@@ -1,0 +1,14 @@
+/* #container p {
+    background-color: yellow;
+  } */
+
+/* Kali ini kedua selector tersebut dipisah oleh tanda ">" yang berarti semua element <p> yang 
+merupakan child dari element <div> dengan id bernilai container akan diberi latar belakang berwarna kuning. */
+
+#container > p {
+    background-color: yellow;
+  }
+
+h1, h2 {
+    color: red;
+}

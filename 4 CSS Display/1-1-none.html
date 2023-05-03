@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display None CSS</title>
+    <style>
+        .container{
+            padding: 20px;
+            width: max-content;
+            display: flex;
+            border: 1px solid black;
+        }
+        .block1, .block2, .block3 {
+            height: 40px;
+            width: 120px;
+        }
+
+        .block1 {
+          background-color: rgb(224, 110, 49);
+          margin-right: 20px;
+        }
+
+        .block2 {
+          background-color: rgb(77, 77, 234);
+          margin-right: 20px;
+          cursor: pointer;
+          /* display: none; */
+          /* visibility: hidden; */
+          /* opacity: 0; */
+        }
+
+        .block3 {
+          background-color: rgb(12, 154, 142);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <div class="block3"></div>
+      </div>      
+</body>
+</html>
+
+<script>
+    // ambil elemen dengan class "block2"
+    const block2 = document.querySelector('.block2');
+
+    // tambahkan event listener untuk "click" event
+    block2.addEventListener('click', function() {
+      // cek apakah elemen sedang tersembunyi atau tidak
+      if (block2.style.visibility === 'hidden') {
+        // ubah properti "visibility" menjadi "visible"
+        block2.style.visibility = 'visible';
+      } else {
+        // jika elemen tidak tersembunyi, ubah properti "visibility" menjadi "hidden"
+        block2.style.visibility = 'hidden';
+      }
+    });
+</script>

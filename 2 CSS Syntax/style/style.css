@@ -1,0 +1,33 @@
+/* Jika kita ingin memberikan style pada semua element di website, 
+maka kita bisa menggunakan * sebagai selector. */
+
+* {
+    background-color: green;
+}
+
+div * {
+    background-color: yellow;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Sebuah HTML element bisa kita beri id atau tanda pengenal. Setelahnya, kita bisa memberikan style 
+pada element dengan id tersebut dengan menuliskan sebuah tanda pagar # yang diikuti id dari element tersebut. */
+
+#firstparagraph {
+    border: solid blue;
+}
+
+#secondparagraph {
+    border: solid pink;
+}
+
+/* Kali ini selector untuk class dari sebuah element adalah tanda titik . 
+yang diikuti dengan nama class dari element tersebut. */
+
+.highlight {
+    background-color: black;
+    color: red;
+}

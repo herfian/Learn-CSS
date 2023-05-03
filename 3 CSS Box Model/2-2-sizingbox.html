@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Sizing CSS</title>
+    <style>
+        div {
+            width: 600px;
+            background: lightblue;
+        }
+        img {
+            width: 150px;
+            background: lightgreen;
+            padding: 20px;
+            border: 2px solid black;
+
+            /* tambahkan properti box-sizing: border-box */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://skilvul-assets-01.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/cat.jpg" /><img src="https://skilvul-assets-01.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/cat.jpg" /><img src="https://skilvul-assets-01.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/cat.jpg" /><img src="https://skilvul-assets-01.s3-ap-southeast-1.amazonaws.com/lesson/intro-to-css/cat.jpg"
+        />
+    </div>
+</body>
+</html>

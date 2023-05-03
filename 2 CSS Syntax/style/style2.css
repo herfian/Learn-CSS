@@ -1,0 +1,10 @@
+a[href] {
+    background-color: cyan;
+}
+
+/* Selain itu, kita juga bisa memberikan style pada element 
+yang memiliki nilai tertentu pada attributenya. */
+
+a[download='search-engine.txt'] {
+    background-color: pink;
+}
